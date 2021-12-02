@@ -32,3 +32,8 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#rateBox {
+  display: flex;
+  flex-direction: row;
+}
