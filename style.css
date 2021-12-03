@@ -37,6 +37,7 @@ main {
   display: flex;
   flex-direction: row;
 }
+
 #counter {
   display: flex;
   justify-content: center;
