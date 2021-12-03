@@ -3,6 +3,8 @@ const password = document.getElementsByTagName('input')[1];
 const btnForm = document.getElementsByTagName('button')[0];
 const checkBox = document.getElementById('agreement');
 const btnSend = document.getElementById('submit-btn');
+const count = document.getElementById('counter');
+const character = document.getElementById('textarea');
 
 function formValidation() {
   const emailContent = email.value;
@@ -23,3 +25,10 @@ function enableSend() {
   }
 }
 checkBox.addEventListener('click', enableSend);
+
+function countCharacters() {
+  const number = 500 - character.value.length;
+  count.innerText = number;
+  console.log(count);
+}
+character.addEventListener('keyup', countCharacters);
